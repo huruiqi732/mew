@@ -12,17 +12,19 @@
 
     <h1 class="center"><i class="fas fa-paw"></i>收集蛮蛮！</h1>
     <h2 class="center" id="message">这只喵是蛮蛮吗！</h2>
-    <h3 class="center" id="judge-message"></h3>
     <div class="center">
-        <div class="inline-block">
+        <div class="circle-point inline-block">point<br><span id="point">0</span></div>
+        <div class="inline-block center-box">
             <img id="picture" class="center-picture" src="defaultCat.jpg" alt="Grapefruit slice atop a pile of other slices">
         </div>
+        <div class="circle-wrong inline-block">wrong<br><span id="wrong">0</span></div>
+
     </div>
     <br>
     <div class="center">
-        <a href="#" id="start" class="btn-square" onClick="start()">开始找蛮蛮！！</a>
-        <a href="#" id="yes" class="btn-square" onClick="chooseYes()">对!这是我家蛮宝！</a>
-        <a href="#" id="no" class="btn-square" onClick="chooseNo()">不！这不是蛮蛮！</a>
+        <a href="#" id="start" class="btn-square" onClick="start()"></a>
+        <a href="#" id="yes" data-id="yes" class="btn-square choose-option">对！这是我家蛮宝！</a>
+        <a href="#" id="no" data-id="no" class="btn-square choose-option">不！这不是蛮蛮！</a>
     </div>
 
 </body>
