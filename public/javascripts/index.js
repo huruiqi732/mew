@@ -24,7 +24,7 @@ function start() {
     $('#point').text('0');
     $('#wrong').text('0');
     $("#message").text("这只喵是蛮蛮吗！");
-    document.getElementById("picture").src = `cats/${cats[pictureIndex]}`;
+    document.getElementById("picture").src = `images/cats/${cats[pictureIndex]}`;
 }
 
 function judgeAnswer(clickedId) {
@@ -55,8 +55,8 @@ function judgeAnswer(clickedId) {
 }
 
 function displayCat(pictureIndex) {
-    $("#message").text("这只喵是蛮蛮吗！");
-    document.getElementById("picture").src = `cats/${cats[pictureIndex]}`;
+    setTimeout("$('#message').text('这只喵是蛮蛮吗！')", 300);
+    document.getElementById("picture").src = `images/cats/${cats[pictureIndex]}`;
 }
 
 function finishGame() {
@@ -68,7 +68,7 @@ function finishGame() {
         $("#message").text(`游戏结束！答对${point}题 答错${wrong}题！还不错！`) :
         $("#message").text(`游戏结束！答对${point}题 答错${wrong}题！小心蛮蛮挠你！`);
     load();
-    document.getElementById("picture").src = "defaultCat.jpg";
+    document.getElementById("picture").src = "images/defaultCat.jpg";
 
     $("#start").text("再来一次！！");
 }

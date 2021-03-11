@@ -1,0 +1,6 @@
+applications:
+- path: .
+  name: mew
+  instances: 1
+  memory: 128M
+  command: npm start
